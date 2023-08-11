@@ -1,0 +1,14 @@
+{
+  "name": "iot_sit729_task4_repo",
+  "version": "1.0.0",
+  "description": "IoT Data Testing",
+  "main": "iotsensor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vishesh pahuja",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^7.4.2"
+  }
+}
