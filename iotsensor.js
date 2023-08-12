@@ -1,9 +1,3 @@
-const mongoose = require('mongoose');
-
-mongoose.connect('mongodb+srv://s223535784:s223535784@sit209-wt5gz.mongodb.net/data');
-
-const Sensor = require('./models/sensor');
-
 const sensordata = {
     id: 0,
     name: "temperaturesensor",
@@ -17,6 +11,10 @@ reading = Math.floor(Math.random() * (high - low) + low);
 sensordata.temperature = reading;
 const jsonString = JSON.stringify(sensordata);
 console.log(jsonString);
+
+const mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://s223535784:s223535784@sit729-cluster.9ethvmx.mongodb.net/');
+const Sensor = require('./models/sensor');
 
 const newSensor = new Sensor({
     id: sensordata.id,
